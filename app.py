@@ -6,7 +6,7 @@ from azure.identity import DefaultAzureCredential
 
 app = Flask(__name__)
 
-VAULT_URL = "https://vaulturl.vault.azure.net/"
+VAULT_URL = "https://dbsecrets1234.vault.azure.net/"
 
 credential = DefaultAzureCredential()
 secret_client = SecretClient(vault_url=VAULT_URL, credential=credential)
